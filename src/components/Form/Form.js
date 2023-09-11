@@ -1,7 +1,7 @@
 import React from "react"
 
-const Form = () => {
-  return <div className="form-container section-padding">{props.children}</div>
+const Form = props => {
+  return <div className="form-container section-padding"></div>
 }
 
 export default Form
