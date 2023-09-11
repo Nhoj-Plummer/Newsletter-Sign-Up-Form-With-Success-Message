@@ -1,11 +1,14 @@
 .form-container {
+  display: flex;
   border: 1px solid;
 }
 
 /* Conditional Section */
 /* Mobile Rules */
 @media screen and (max-width: 540px) {
-  
+  .form-container {
+    flex-direction: column;
+  }
 }
 
 /* Desktop Rules */

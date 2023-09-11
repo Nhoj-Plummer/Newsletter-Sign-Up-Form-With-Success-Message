@@ -24,9 +24,11 @@ const Input = () => {
         <p>Join 60,000+ product managaers receiving monthly updates on:</p>
         <ul>{listText}</ul>
         <form>
+          <p>Email Address</p>
           <div className="input-container_text-container-form">
-            <input type="email" value={email} name="email" placeholder="Email Address" onChange={handleChange} required />
+            <input type="email" name="email" placeholder="Email Address" required />
           </div>
+          <button type="submit">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <div className="input-cotainer_img-container">

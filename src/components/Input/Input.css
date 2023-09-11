@@ -5,3 +5,9 @@
 .input-cotainer_img-container {
   border: 1px solid;
 }
+
+.input-cotainer_img-container img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
