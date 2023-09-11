@@ -1,5 +1,9 @@
 .form-container {
   display: flex;
+  background: var(--white);
+  justify-content: center;
+  max-width: 54rem;
+  height: 600px;
   border: 1px solid;
 }
 
