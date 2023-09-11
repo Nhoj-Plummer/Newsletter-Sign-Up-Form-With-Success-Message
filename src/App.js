@@ -1,8 +1,8 @@
 import "./App.css"
-import { Form } from "./components/index"
+import { Input } from "./components/index"
 
 function App() {
-  return <Form />
+  return <Input />
 }
 
 export default App
