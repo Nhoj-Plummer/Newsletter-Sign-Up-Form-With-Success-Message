@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Input.css"
 import Form from "../Form/Form"
 import Mobile from "../../assets/illustration-sign-up-mobile.svg"
@@ -14,6 +14,32 @@ const listText = textList.map(data => (
 ))
 
 const Input = () => {
+  const [email, setEmail] = useState("")
+  const [error, setError] = useState(null)
+
+  function validateEmail(email) {
+    return /\S+@\S+\.\S+/.test(email)
+  }
+
+  const handleChange = e => {
+    /*Conditnional Formations */
+
+    // Not Filled COmpletely or no correctly made
+    if (!validateEmail(e.target.value)) {
+      setError(true)
+    }
+    // Empty Field
+    if (e.target.value === "") {
+      setError(false)
+    }
+
+    // Filled Field
+    if (validateEmail(e.target.value)) {
+      setError(false)
+    }
+    setEmail(e.target.value)
+  }
+
   return (
     <Form>
       <div className="input-container_text-container">
@@ -21,10 +47,19 @@ const Input = () => {
         <p>Join 60,000+ product managaers receiving monthly updates on:</p>
         <ul>{listText}</ul>
         <form>
-          <p>Email Address</p>
-          <div className="input-container_text-container-form">
-            <input type="email" name="email" placeholder="email@company.com" required />
-          </div>
+          {error ? (
+            <div className="input-container_text-container-form_error ">
+              <p>
+                Email Address <span>Valid email required</span>
+              </p>
+              <input type="email" value={email} name="email" placeholder="email@company.com" onChange={handleChange} required />
+            </div>
+          ) : (
+            <div className="input-container_text-container-form">
+              <p>Email Address</p>
+              <input type="email" value={email} name="email" placeholder="email@company.com" onChange={handleChange} required />
+            </div>
+          )}
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
       </div>
