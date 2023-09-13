@@ -9,10 +9,9 @@ const textList = [{ text: "Product discovery and building what matters" }, { tex
 
 const listText = textList.map(data => (
   <li>
-    <span>
-      <img src={Icon} alt="Icon" />
-    </span>
-    {data.text}
+    <img src={Icon} alt="Icon" />
+
+    <span>{data.text}</span>
   </li>
 ))
 

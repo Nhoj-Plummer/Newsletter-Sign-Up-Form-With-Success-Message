@@ -2,8 +2,8 @@
   display: flex;
   background: var(--white);
   justify-content: center;
-  max-width: 54rem;
-  height: 600px;
+  max-width: 50rem;
+  max-height: 600px;
   border: 1px solid;
 }
 
@@ -17,4 +17,7 @@
 
 /* Desktop Rules */
 @media screen and (min-width: 540px) {
+  .form-container {
+    padding: 20px;
+  }
 }

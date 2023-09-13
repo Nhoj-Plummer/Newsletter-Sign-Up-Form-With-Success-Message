@@ -1,5 +1,20 @@
 .input-container_text-container {
+  font-family: var(--font-family);
   border: 1px solid;
+}
+
+.input-container_text-container ul {
+  list-style: none;
+  border: 1px solid;
+}
+
+.input-container_text-container ul span {
+  font-weight: 400;
+  border: 1px solid;
+}
+
+.input-container_text-container-form input{
+  width: 100%;
 }
 
 .input-cotainer_img-container {
@@ -16,9 +31,15 @@
 @media screen and (max-width: 540px) {
   .input-container_text-container {
     order: 2;
+    padding: 20px;
   }
 
   .input-cotainer_img-container {
     order: 1;
   }
+}
+
+/* Desktop Rules */
+@media screen and (min-width: 540px) {
+
 }
