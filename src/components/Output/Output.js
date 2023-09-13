@@ -5,16 +5,16 @@ import Success from "../../assets/icon-success.svg"
 
 const Output = email => {
   return (
-    <Form>
-      <div className="output-container">
+    <>
+      <div className="output-container section-padding">
         <img src={Success} alt="success" />
-        <h1>Thanks For Subscribing!</h1>
+        <h1>Thanks For subscribing!</h1>
         <p>
-          A confirmation email has been sent to <span>ash@loremcomapny.com</span>. PLease open it and click the button inside to confirm your subscription.
+          A confirmation email has been sent to <span>ash@loremcomapny.com</span>. Please open it and click the button inside to confirm your subscription.
         </p>
         <button>Dismiss message</button>
       </div>
-    </Form>
+    </>
   )
 }
 
