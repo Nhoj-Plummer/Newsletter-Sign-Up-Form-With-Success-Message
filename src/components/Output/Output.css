@@ -1,0 +1,14 @@
+.output-container {
+  flex: 1;
+  font-family: var(--font-family);
+  padding: 20px;
+  max-width: 50%;
+  border: 1px solid;
+}
+
+.output-container p {
+  border: 1px solid;
+ 
+}
+
+

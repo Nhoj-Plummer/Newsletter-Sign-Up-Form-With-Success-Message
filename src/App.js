@@ -1,5 +1,5 @@
 import "./App.css"
-import { Input } from "./components/index"
+import { Input, Output } from "./components/index"
 
 function App() {
   return <Input />
