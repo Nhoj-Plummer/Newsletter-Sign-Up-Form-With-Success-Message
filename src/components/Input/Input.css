@@ -1,5 +1,7 @@
+/* General Formating */
 .input-container_text-container {
   font-family: var(--font-family);
+  padding: 20px;
   border: 1px solid;
 }
 
@@ -12,6 +14,7 @@
   line-height: 1.5rem;
 }
 
+/* List Pieces */
 .input-container_text-container ul {
   margin-top: 1rem;
   list-style-image: url("../../assets/icon-list.svg");
@@ -28,10 +31,25 @@
   border: 1px solid;
 }
 
+/* Form Pieces */
+.input-container_text-container form p {
+  font-weight: 700;
+}
+
 .input-container_text-container-form input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid var(--grey);
   width: 100%;
 }
 
+.input-container_text-container-form input::placeholder {
+  font-family: var(--font-family);
+  font-size: 16px;
+  padding: 0.8rem 2.5rem;
+}
+
+/* Image Pieces */
 .input-cotainer_img-container {
   border: 1px solid;
 }
@@ -46,7 +64,7 @@
 @media screen and (max-width: 540px) {
   .input-container_text-container {
     order: 2;
-    padding: 20px;
+    
   }
 
   .input-cotainer_img-container {
