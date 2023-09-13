@@ -41,12 +41,24 @@
   border-radius: 10px;
   border: 1px solid var(--grey);
   width: 100%;
+  padding-left: 20px;
 }
 
 .input-container_text-container-form input::placeholder {
   font-family: var(--font-family);
   font-size: 16px;
-  padding: 0.8rem 2.5rem;
+}
+
+.input-container_text-container button {
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: 16px;
+  border-radius: 10px;
+  border-style: none;
+  background: var(--dark-slate-grey);
+  height: 50px;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 /* Image Pieces */
@@ -64,7 +76,6 @@
 @media screen and (max-width: 540px) {
   .input-container_text-container {
     order: 2;
-    
   }
 
   .input-cotainer_img-container {
