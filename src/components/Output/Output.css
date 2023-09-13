@@ -1,13 +1,44 @@
 .output-container {
   font-family: var(--font-family);
   background: var(--white);
-  max-width: 25rem;
-
+  max-width: 26rem;
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px 15px;
   border: 1px solid;
 }
 
-.output-container p {
+.output-container img {
+  margin-top: 1rem;
+}
+
+.output-container h1 {
   border: 1px solid;
+  margin-top: 1rem;
+  font-size: 50px;
+  width: 90%;
+}
+
+.output-container p {
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 1.5rem;
+  border: 1px solid;
+}
+
+.output-container button {
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: 16px;
+  border-radius: 10px;
+  border-style: none;
+  background: var(--dark-slate-grey);
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.output-container button:hover {
+  background: linear-gradient(90deg, rgba(255, 84, 118, 1) 0%, rgba(250, 90, 88, 1) 50%, rgba(255, 103, 64, 1) 100%);
+  transition: 0.3s;
 }

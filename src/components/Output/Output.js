@@ -8,7 +8,7 @@ const Output = email => {
     <>
       <div className="output-container section-padding">
         <img src={Success} alt="success" />
-        <h1>Thanks For subscribing!</h1>
+        <h1>Thanks for subscribing!</h1>
         <p>
           A confirmation email has been sent to <span>ash@loremcomapny.com</span>. Please open it and click the button inside to confirm your subscription.
         </p>
