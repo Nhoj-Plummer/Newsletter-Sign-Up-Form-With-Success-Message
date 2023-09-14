@@ -13,7 +13,7 @@ const listText = textList.map(data => (
   </li>
 ))
 
-function Input(props) {
+const Input = ({ setEmail, setShowOutputPage }) => {
   const [emailData, setEmailData] = useState("")
   const [error, setError] = useState(null)
 
@@ -40,8 +40,11 @@ function Input(props) {
     setEmailData(e.target.value)
   }
 
-  const handleSubmit = (e) => {
-    
+  const handleSubmit = e => {
+    e.preventDefault()
+    if (!error) {
+      setShowOutputPage(true)
+    }
   }
 
   return (
@@ -50,18 +53,18 @@ function Input(props) {
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managaers receiving monthly updates on:</p>
         <ul>{listText}</ul>
-        <form>
+        <form onSubmit={handleSubmit}>
           {error ? (
             <div className="input-container_text-container-form_error ">
               <p>
                 Email Address <span>Valid email required</span>
               </p>
-              <input type="email" value={emailData} name="email" placeholder="email@company.com" onChange={handleChange} required />
+              <input type="email" id="email" value={emailData} name="email" placeholder="email@company.com" onChange={handleChange} required />
             </div>
           ) : (
             <div className="input-container_text-container-form">
               <p>Email Address</p>
-              <input type="email" value={emailData} name="email" placeholder="email@company.com" onChange={handleChange} required />
+              <input type="email" id="email" value={emailData} name="email" placeholder="email@company.com" onChange={handleChange} required />
             </div>
           )}
           <button type="submit">Subscribe to monthly newsletter</button>
