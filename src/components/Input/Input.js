@@ -43,6 +43,7 @@ const Input = ({ setEmail, setShowOutputPage }) => {
   const handleSubmit = e => {
     e.preventDefault()
     if (!error) {
+      setEmail(e.target.value)
       setShowOutputPage(true)
     }
   }

@@ -2,7 +2,7 @@ import React from "react"
 import "./Output.css"
 import Success from "../../assets/icon-success.svg"
 
-const Output = ({ email }) => {
+const Output = ({ email, setShowOutputPage }) => {
   return (
     <>
       <div className="output-container section-padding">
@@ -11,7 +11,7 @@ const Output = ({ email }) => {
         <p>
           A confirmation email has been sent to <span>{email}</span>. Please open it and click the button inside to confirm your subscription.
         </p>
-        <button>Dismiss message</button>
+        <button onClick={() => setShowOutputPage(false)}>Dismiss message</button>
       </div>
     </>
   )
