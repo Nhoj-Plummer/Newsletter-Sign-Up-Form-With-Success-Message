@@ -8,7 +8,6 @@ const textList = [{ text: "Product discovery and building what matters" }, { tex
 
 const listText = textList.map(data => (
   <li>
-    {/* <img src={Icon} alt="Icon" /> */}
     <span>{data.text}</span>
   </li>
 ))
@@ -44,7 +43,7 @@ const Input = ({ setEmail, setShowOutputPage }) => {
   const handleSubmit = e => {
     e.preventDefault()
     if (!error) {
-      setEmail(JSON.stringify(emailData))
+      setEmail(emailData)
       setShowOutputPage(true)
     }
   }
