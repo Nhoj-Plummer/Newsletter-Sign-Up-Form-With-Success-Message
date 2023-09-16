@@ -52,7 +52,7 @@ const Input = ({ setEmail, setShowOutputPage }) => {
     <Form>
       <div className="input-container_text-container">
         <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managaers receiving monthly updates on:</p>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
         <ul>{listText}</ul>
         <form onSubmit={handleSubmit}>
           {error ? (
