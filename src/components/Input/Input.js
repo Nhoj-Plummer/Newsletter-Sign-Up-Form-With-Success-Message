@@ -40,6 +40,7 @@ const Input = ({ setEmail, setShowOutputPage }) => {
     setEmailData(e.target.value)
   }
 
+  // Submit when email condition is met
   const handleSubmit = e => {
     e.preventDefault()
     if (!error) {
